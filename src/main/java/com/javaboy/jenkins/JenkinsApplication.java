@@ -15,7 +15,7 @@ public class JenkinsApplication {
 
     @GetMapping("/test")
     public String test(){
-        return "hello world";
+        return "hello world,init first test";
     }
 
 }
