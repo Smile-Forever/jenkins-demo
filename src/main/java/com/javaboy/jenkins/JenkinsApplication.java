@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 @RestController
 @SpringBootApplication
 public class JenkinsApplication {
@@ -15,7 +17,7 @@ public class JenkinsApplication {
 
     @GetMapping("/test")
     public String test(){
-        return "hello world,init first test";
+        return "hello world,init test" + new Date();
     }
 
 }
